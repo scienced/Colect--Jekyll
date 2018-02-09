@@ -14,7 +14,7 @@ title: Colect
 
 			<p class="hero-text c-light">Show off your own collection, order new styles and stock from your very own iPad or iPhone app. Easy to use, simple to learn. Sell more, sell better and sell faster. Colect by Apps4Fashion is the leading sales and order-entry app in use in the fashion industry today.</p>
 
-			<a class="button inverted white" href="apps4fashion/about.html">See how it works</a><a class="button primary" href="javascript:_dcq.push(['showForm', { id: '495136430' }]);">Try the free demo</a>
+			<a class="button inverted white scroll-video" href="#">See how it works</a><a class="button primary" href="javascript:_dcq.push(['showForm', { id: '495136430' }]);">Try the free demo</a>
 
 		</div><!-- /.grid-wrap -->
 	</div><!-- /.hero-content -->
@@ -63,7 +63,7 @@ title: Colect
 
 
  
-	<section class="block double bg-white ">
+	<section class="block double bg-white video">
 	<div class="grid-wrap">
 
 		<h1 class="section-title align-center">See it in action</h1>
@@ -390,5 +390,16 @@ title: Colect
 
 			</div>
 		</section>
+
+
+<!-- scroll down scripts -->
+<script type="text/javascript">
+ $(function() {
+    $('.scroll-video').click (function() {
+      $('html, body').animate({scrollTop: $('section.video').offset().top }, 'slow');
+      return false;
+    });
+  });
+</script>
 
 		{% include footer.html %}
