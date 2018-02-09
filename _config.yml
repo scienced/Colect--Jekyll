@@ -40,9 +40,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  defaults:
-  -
-    scope:
-      path: "posts" 
-    values:
-      layout: "post"
+
