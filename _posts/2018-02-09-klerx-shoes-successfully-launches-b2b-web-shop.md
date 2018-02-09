@@ -1,11 +1,10 @@
 ---
-title: "Klerx Shoes successfully launches B2B web shop"
-date: 2018-02-08 14:41:27 +00:00
-Intro: "Dutch footwear wholesaler, P.J. Klerx & Zonen located in Waalwijk, known from
-  Red-Rag, Develop and Paul Green, has successfully launched their B2B web shop."
-Image: "/uploads/2018/02/08/1535741_757545220940584_39035005_n.jpg"
+title: Klerx Shoes successfully launches B2B web shop
+date: 2018-02-08 15:41:27 +0100
+Intro: Dutch footwear wholesaler, P.J. Klerx & Zonen located in Waalwijk, known from
+  Red-Rag, Develop and Paul Green, has successfully launched their B2B web shop.
+Image: "/uploads/2018/02/09/Klerx-Schoenen.jpg"
 layout: post
-
 ---
 
 With this web shop they are offering their B2B customers a modern branded service platform with a 24/7 direct access to available stock from the several brand collections including the possibility to send in re- and stock orders at any time and any place. During the day from their stores or in the evening at the kitchen table.
