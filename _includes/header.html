@@ -135,10 +135,10 @@
 
 	<body class="no-svg homepage" lang="en">
 
-		<header class="">
+		<header class="" style="background-color: rgba(51, 49, 49, 0.9);">
 			<div class="grid-wrap">
 				<a href="/index.html" class="header-logo">
-				<img src="/assets/img/icons/colect.io.png">
+				<img src="http://assets.apptitude.nl/Apps4Fashion/Uploads/EtqyFsqSQ5jcRFGv.png" height="52">
 				</a>
 
 				<a href="#" class="menu-toggle show-on-small js-menu-toggle">Menu</a>
@@ -146,7 +146,7 @@
 				{% assign current = page.url | downcase | split: '/' %}
 				
 
-				<ul class="header-list hide-on-small">
+				<ul class="header-list hide-on-small" style="color: white;">
 				<li  {% if current[1] == nil %}class="active"{% endif %}><a href="/index.html">Home</a></li><li  class=""><a href="apps4fashion/about.html">About</a></li><li  {% if current[1] == 'list.html' %}class="active"{% endif %}><a href="{{ "list" | absolute_url }}">Blog</a></li><li  class=""><a href="apps4fashion/support.html">Support</a></li><li  class=""><a href="apps4fashion/contact.html">Contact</a></li>
 				</ul>
 
