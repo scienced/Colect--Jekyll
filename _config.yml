@@ -26,7 +26,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
 
@@ -46,3 +46,10 @@ include:
   - files/gallery/_verticalsmall
   - files/gallery/_verticalsmall/01benefitsbeelden.jpg
   - files/visuals/_bg
+
+  defaults:
+  -
+    scope:
+      path: "posts" 
+    values:
+      layout: "post"
