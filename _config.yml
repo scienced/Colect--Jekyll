@@ -41,11 +41,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-include: 
-  - files/gallery/_logo
-  - files/gallery/_verticalsmall
-  - files/gallery/_verticalsmall/01benefitsbeelden.jpg
-  - files/visuals/_bg
 
   defaults:
   -
