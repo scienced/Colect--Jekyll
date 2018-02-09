@@ -1,0 +1,20 @@
+---
+hide_body: false
+fields:
+- type: text
+  default: ''
+  label: Title
+  name: title
+  config:
+    required: true
+- type: textarea
+  name: Intro
+  label: Ankeiler
+- type: file
+  label: Image
+  name: Image
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
