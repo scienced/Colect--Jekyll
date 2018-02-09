@@ -7,6 +7,10 @@ fields:
   name: title
   config:
     required: true
+- type: datetime
+  default: Invalid date
+  label: Date
+  name: date
 - type: textarea
   name: Intro
   label: Ankeiler
