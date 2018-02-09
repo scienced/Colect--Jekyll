@@ -1,0 +1,70 @@
+---
+title: blog list
+---
+
+{% include header.html %}
+<main>
+<section class="home-hero" style="background: url('files/visuals/bg/news2.jpg') center center no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
+                <div class="hero-content block">
+                    <div class="grid-wrap">
+                        <h1 class="hero-title c-light">What's appening?</h1>
+                    </div><!-- /.grid-wrap -->
+                </div><!-- /.hero-content -->
+            </section>
+            
+
+            <!-- Contact unit -->
+            <section class="block bg-white news-list " id="our-apps">
+                <div class="grid-wrap">
+
+
+
+
+
+    <div class="grid-row">
+        
+
+
+        {% for post in site.posts %}
+
+          {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+
+
+              <div class="third">
+                                <a href="{{ post.url }}"><img src="{{ post.Image }}" class="responsive news-image"></a>
+
+                                <div class="box-content">
+                                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                                    <p>{{ post.Intro }} <a class="" href="{{ post.url }}">more &rsaquo;</a></p>
+                                    
+                                </div>
+                            </div> 
+
+          {% if modulo == '0' or forloop.last %}
+            <div class="row-spacer"></div>
+          {% endif %}
+
+        {% endfor %}
+
+
+
+
+
+         <div class="row-spacer"></div>
+
+
+
+
+   
+                            
+                            
+    <div class="row-spacer"></div>
+ 
+
+        </div><!-- /.grid-row -->
+
+    </div>
+</section>
+
+</main>
+{% include footer.html %}
