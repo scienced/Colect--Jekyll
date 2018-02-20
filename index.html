@@ -309,6 +309,40 @@ title: Colect
 
 	</div><!-- /.grid-wrap -->
 </section>
+
+<section class="block bg-light " id="our-apps">
+	<div class="grid-wrap">
+		<h1 class="section-title align-left">Colect blog - Recent</h1>
+
+		
+
+		
+		<!-- 1 current 30 -->
+		<div class="grid-row">
+			
+		{% for post in site.posts limit:3 %}
+          <div class="third">
+                                <a href="{{ post.url }}"><img src="{{ post.Image }}" class="responsive news-image"></a>
+
+                                <div class="box-content">
+                                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                                    <p>{{ post.Intro }} <a class="" href="{{ post.url }}">more &rsaquo;</a></p>
+                                    
+                                </div>
+                            </div>  
+
+
+        {% endfor %}
+
+				<div class="row-spacer"></div>
+		</div><!-- /.grid-row -->
+		
+
+		<!-- More button -->
+		
+
+	</div><!-- /.grid-wrap -->
+</section>
  
 
 
