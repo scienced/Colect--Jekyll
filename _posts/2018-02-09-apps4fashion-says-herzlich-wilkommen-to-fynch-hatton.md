@@ -2,9 +2,8 @@
 layout: post
 title: Apps4Fashion says “Herzlich Wilkommen”​ to Fynch-Hatton
 date: 2018-02-09 00:00:00 +0000
-Intro: We welcome this German "Familien Unternehmen" to the Apps4Fashion family and
-  look forward to service them with our sales tools on their way to an 100 Million
-  turnover!
+Intro: We welcome this German "Familien Unternehmen" to the Colect family and look
+  forward to service them with our sales tools on their way to an 100 Million turnover!
 Image: "/uploads/2018/02/08/IMG_0037.PNG"
 ---
 After successfully implementing our mobile order tools at fashion, sports wear, accessory and footwear brands, manufacturers, suppliers, distributors and agencies across Europe we warmly welcome this German "Familien Unternehmen" and look forward to service them with our sales tools on their way to an 100 Million turnover!
