@@ -7,6 +7,41 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
+<script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.productpage_menu').fadeIn(500).css('display', 'table');
+                    } else {
+                        $('.productpage_menu').fadeOut(500);
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+
 <style>
         /* MEDIA QUERIES START */
     
@@ -23,9 +58,8 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
     
         /* BASIC PAGE START */
 
-        p {
-    font-size: 16px !important;
-    line-height: 1.5rem;
+        html, body {
+        font-family: 'Roboto', sans-serif;
         }
 
         b, strong {
@@ -75,7 +109,8 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
     
         .productpage .productpage_menu li {
             color: #e6e6e6;
-            font-size: 17px;
+            font-size: 18px;
+            font-size: 1.8rem;
             list-style: none;
             display: table-cell;
         }
@@ -135,7 +170,10 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
         /* License SECTION START */
     
         .license p {
-            font-size: 16px;
+            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 28px;
+            line-height: 2.8rem
         }
     
          /* License SECTION END */
@@ -192,11 +230,15 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
         .w3-container.w3-white li {
             padding: 5px 0px 5px 0px;
             display: block;
-            font-size: 16px;
+            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 28px;
+            line-height: 2.8rem
         }
     
         .w3-row-padding {
-            font-size: 16px;
+            font-size: 18px;
+            font-size: 1.8rem;
         }
     
         img.w3-hover-opacity {
@@ -259,16 +301,7 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
     
     </style>
 
-<main>
-<section class="home-hero" style="background: url('{{ page.Image}}') center center no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
-                <div class="hero-content block">
-                    <div class="grid-wrap">
-                        <h1 class="hero-title c-light">{{ page.title}}</h1>
-                    </div><!-- /.grid-wrap -->
-                </div><!-- /.hero-content -->
-            </section>
- 
-          
+<main>           
                     <div class="productpage">
                         <div class="productpage_menu" id="product_menu">
                             <ul class="nav">
@@ -554,44 +587,6 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
                 
                     </div>
                 
-                    <script>
-                        $(document).ready(function () {
-                            // Add smooth scrolling to all links
-                            $("a").on('click', function (event) {
-                
-                                if (this.hash !== "") {
-                                    // Prevent default anchor click behavior
-                                    event.preventDefault();
-                                    var hash = this.hash;
-                
-                                    $('html, body').animate({
-                                        scrollTop: $(hash).offset().top
-                                    }, 800, function () {
-                
-                                        window.location.hash = hash;
-                                    });
-                                }
-                            });
-                        });
-                    </script>
-                
-                    <script type="text/javascript">
-                        (function ($) {
-                            $(document).ready(function () {
-                                $(window).scroll(function () {
-                                    if ($(this).scrollTop() > 200) {
-                                        $('.productpage_menu').fadeIn(500).css('display', 'table');
-                                    } else {
-                                        $('.productpage_menu').fadeOut(500);
-                                    }
-                                });
-                            });
-                        })(jQuery);
-                    </script>
-                        
-
-
-
    <section class="block bg-white">
     <div class="grid-wrap">
         
