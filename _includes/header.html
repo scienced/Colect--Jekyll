@@ -86,7 +86,7 @@
 
 	</head>
 
-	<body class="no-svg homepage" lang="en">
+	<body class="no-svg {% if page.front == 'yes' %}homepage{% endif %}" lang="en">
 
 		<header class="" style="background-color: rgba(51, 49, 49, 0.9);">
 			<div class="grid-wrap2" style="max-width: 1440px;
@@ -104,7 +104,10 @@
 				{% assign current = page.url | downcase | split: '/' %}
 				
 				<div style="float: right;"><ul class="header-list hide-on-small" style="color: white;">
-				<li  class=""><a href="/product">Product</a></li><li  {% if current[1] == 'list.html' %}class="active"{% endif %}><a href="{{ "list" | absolute_url }}">Customers</a></li><li  class=""><a href="apps4fashion/support.html">Support</a></li><li  class=""><a href="apps4fashion/contact.html">About</a></li>
+				<li  class=""><a href="/product">Product</a></li>
+				<li  {% if current[1] == 'list.html' %}class="active"{% endif %}><a href="{{ "list" | absolute_url }}">Customers</a></li>
+				
+				<li  class=""><a href="apps4fashion/contact.html">Contact</a></li>
 				<li><a href="/signup" class="button inverted white">Get free demo</a></li>
 
 				</ul>
