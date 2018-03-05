@@ -34,7 +34,7 @@ defaults:
 # Build settings
 markdown: kramdown
 
-permalink: pretty
+# permalink: pretty
 
 
 # Exclude from processing.
