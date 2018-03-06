@@ -1236,7 +1236,7 @@ header {
 }
 .homepage .home-hero {
   min-height: 800px;
-  min-height: 100vh;
+  min-height: 75vh;
   /* @include breakpoint(max-width 1200px){
   	min-height: 1px;
   	height: auto;
@@ -2001,8 +2001,8 @@ p.small {
 .hero-text {
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 44px;
-  line-height: 4.4rem;
+  line-height: 34px;
+  line-height: 3.4rem;
 }
 @media (max-width: 767px) {
   .hero-text {
@@ -2463,4 +2463,9 @@ ul.slick-dots {
   font-size: 50px;
   font-size: 5rem; 
   color: #cc3300;
+}
+
+p.postdate {
+  font-size: 1rem;
+  margin: 1px;
 }

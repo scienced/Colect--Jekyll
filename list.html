@@ -1,16 +1,21 @@
 ---
 title: blog list
+Image: '/assets/img/bg/app2.png'
 ---
 
 {% include header.html %}
 <main>
-<section class="home-hero" style="background: url('files/visuals/bg/news2.jpg') center center no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
+
+<section class="home-hero" style="background: url('{{ page.Image}}') center center no-repeat ; -webkit-background-size: cover; background-size: cover;">
                 <div class="hero-content block">
                     <div class="grid-wrap">
-                        <h1 class="hero-title c-light">What's appening?</h1>
+                        <div class="half" style="text-align: left;">
+                        <h1 class="hero-title c-light">Colect blog</h1>
+                        <p class="hero-text c-light">The latest news in digital wholesale revolution</p>
+                    </div>
                     </div><!-- /.grid-wrap -->
                 </div><!-- /.hero-content -->
-            </section>
+</section>
             
 
             <!-- Contact unit -->
@@ -35,6 +40,7 @@ title: blog list
 
                                 <div class="box-content">
                                     <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                                    <p class="postdate">{{ post.date | date: '%B %d, %Y' }}</p>
                                     <p>{{ post.Intro }} <a class="" href="{{ post.url }}">more &rsaquo;</a></p>
                                     
                                 </div>
