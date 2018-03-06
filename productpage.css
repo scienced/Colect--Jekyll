@@ -123,6 +123,7 @@ a#collection_button:active {
 .customers .second {
     float: left;
     max-width: max-content !important;
+    box-shadow: 0px 0px 0px 0px !important;
 }
 
 .customers .secondimage {
@@ -344,3 +345,9 @@ ul.tabs-orders li.current {
     display: inherit;
 }
 /* TABS END */
+
+
+/* standard css from website */
+section.home-hero {
+    display: none;
+}

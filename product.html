@@ -343,38 +343,72 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
 
     <script>
             $(document).ready(function () {
-                // Add smooth scrolling to all links
-                $("a").on('click', function (event) {
-    
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-                        var hash = this.hash;
-    
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-    
-                            window.location.hash = hash;
-                        });
+        
+                $('.collections ul.tabs-collections li').click(function () {
+                    var tab_id_collections = $(this).attr('data-tab-collections');
+        
+                    $('ul.tabs-collections li').removeClass('current');
+                    $('.tab-content-collections').removeClass('current');
+        
+                    $(this).addClass('current');
+                    $("#" + tab_id_collections).addClass('current');
+        
+                })
+        
+            })
+        </script>
+        
+        <script>
+            $(document).ready(function () {
+        
+                $('.orders ul.tabs-orders li').click(function () {
+                    var tab_id_orders = $(this).attr('data-tab-orders');
+        
+                    $('ul.tabs-orders li').removeClass('current');
+                    $('.tab-content-orders').removeClass('current');
+        
+                    $(this).addClass('current');
+                    $("#" + tab_id_orders).addClass('current');
+        
+                })
+        
+            })
+        </script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.productpage_menu').fadeIn(500).css('display', 'table');
+                    } else {
+                        $('.productpage_menu').fadeOut(500);
                     }
                 });
             });
-        </script>
-    
-        <script type="text/javascript">
-            (function ($) {
-                $(document).ready(function () {
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() > 150) {
-                            $('.productpage_menu').fadeIn(500).css('display', 'table');
-                        } else {
-                            $('.productpage_menu').css('visibility', 'hidden');
-                        }
-                    });
-                });
-            })(jQuery);
-        </script>
+        })(jQuery);
+    </script>
 
 
 {% include footer.html %}
