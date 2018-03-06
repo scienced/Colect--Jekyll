@@ -1,3 +1,48 @@
+   /* MATERIAL DESIGN */
+
+   .material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+li.tab-link.current .md-inactive {
+    color: #cc3300;
+    vertical-align: middle;
+}
+
+.collections i.material-icons {
+    float: left;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    vertical-align: middle;
+}
 /* MEDIA QUERIES START */
 
 @media screen and (max-width: 700px) {
@@ -8,33 +53,13 @@
         float: left;
     }
 }
+
 /* MEDIA QUERIES END */
 /* BASIC PAGE START */
 
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-b,
-strong {
-    font-weight: bolder;
-}
-
 .wrap-content {
-    max-width: 1054px;
+    max-width: 1200px;
     margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.wrap-content p {
-    font-size: 16px;
-    line-height: 25px;
-    display: table-row;
 }
 
 a#collection_button:active {
@@ -48,14 +73,14 @@ a#collection_button:active {
 }
 
 .productpage_menu {
-    position: sticky;
+    position: fixed;
     top: 0px;
     width: 100%;
     z-index: 9999;
     display: none;
     text-align: center;
     background: #000;
-    padding: 17px 0;
+    padding: 7px 0;
     transition: padding 0.5s;
     left: 0;
 }
@@ -68,8 +93,7 @@ a#collection_button:active {
 
 .productpage .productpage_menu li {
     color: #e6e6e6;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 17px;
     list-style: none;
     display: table-cell;
 }
@@ -77,8 +101,6 @@ a#collection_button:active {
 .productpage .productpage_menu a {
     text-decoration: none;
     padding: 10px 15px;
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
 }
 /* MENU END */
 /* CUSTOMER SECTION CSS */
@@ -101,7 +123,6 @@ a#collection_button:active {
 .customers .second {
     float: left;
     max-width: max-content !important;
-    box-shadow: 0px 0px 0px 0px !important;
 }
 
 .customers .secondimage {
@@ -125,7 +146,19 @@ a#collection_button:active {
 }
 /* API SECTION END */
 /* License SECTION START */
+
+.license p {
+    font-size: 15px;
+}
 /* License SECTION END */
+
+/* Footer SECTION START */
+.wrap-content.footer {
+    max-width: inherit;
+}
+
+/* Footer SECTION END */
+
 /* Anchor settings START */
 
 #collections {
@@ -163,6 +196,13 @@ a#collection_button:active {
 /* Anchor settings END */
 /* BASIC W3 editings START */
 
+.w3-center {
+    text-align: center!important;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
 h3.w3-center {
     font-size: 30px;
 }
@@ -176,6 +216,11 @@ h3.w3-center {
 .w3-container.w3-white li {
     padding: 5px 0px 5px 0px;
     display: block;
+    font-size: 15px;
+}
+
+.w3-row-padding {
+    font-size: 15px;
 }
 
 img.w3-hover-opacity {
@@ -225,13 +270,77 @@ a.w3-button.w3-black:hover {
     background: none !important;
 }
 /* Section - Parallax END */
-/* Style CSS for existing content */
+/* TABS START */
 
-input.btn.btn-submit.button.primary.align-center {
-    margin-top: 10px;
-    margin-left: 0px;
+.wrap-content.collections {
+    max-width: 1200;
 }
 
-.home-hero {
+.wrap-content.orders {
+    max-width: 1200;
+}
+
+ul.tabs-collections {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs-orders {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs-collections p {
+    display: table-row;
+    line-height: 26px;
+}
+
+ul.tabs-orders p {
+    display: table-row;
+    line-height: 26px;
+}
+
+
+ul.tabs-collections li {
+    background: none;
+    color: #000;
+    cursor: pointer;
+    padding: 0px 7px 0px 7px;
+}
+
+ul.tabs-orders li {
+    background: none;
+    color: #000;
+    cursor: pointer;
+    padding: 0px 7px 0px 7px;
+}
+
+ul.tabs-collections li.current {
+    color: #000;
+}
+
+ul.tabs-orders li.current {
+    color: #000;
+}
+
+.tab-content-collections {
     display: none;
+    padding: 15px;
 }
+
+.tab-content-orders {
+    display: none;
+    padding: 15px;
+}
+
+
+.tab-content-collections.current {
+    display: inherit;
+}
+
+.tab-content-orders.current {
+    display: inherit;
+}
+/* TABS END */
