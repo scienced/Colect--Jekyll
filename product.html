@@ -5,6 +5,7 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
 
 {% include header.html %}
 <link rel="stylesheet" href="/w3.css" />
+<link rel="stylesheet" href="/productpage.css" />
 <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -30,616 +31,392 @@ Image: "/files/visuals/bg/unsplash-clark-street-mercantile-33919.jpg"
         (function ($) {
             $(document).ready(function () {
                 $(window).scroll(function () {
-                    if ($(this).scrollTop() > 200) {
+                    if ($(this).scrollTop() > 150) {
                         $('.productpage_menu').fadeIn(500).css('display', 'table');
                     } else {
-                        $('.productpage_menu').fadeOut(500);
+                        $('.productpage_menu').css('visibility', 'hidden');
                     }
                 });
             });
         })(jQuery);
     </script>
 
-<style>
-    /* MEDIA QUERIES START */
-
-    @media screen and (max-width: 700px) {
-
-        .productpage .productpage_menu li {
-            width: 33%;
-            padding: 4px 0px 4px 0px;
-            float: left;
-        }
-    }
-    /* MEDIA QUERIES END */
-    /* BASIC PAGE START */
-
-    html,
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    b,
-    strong {
-        font-weight: bolder;
-    }
-
-    .wrap-content {
-        max-width: 1054px;
-        margin: 0 auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-    }
-
-    .wrap-content p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    a#collection_button:active {
-        color: red;
-    }
-    /* BASIC PAGE END */
-    /* MENU START */
-
-    .productpage .productpage_menu a:hover {
-        color: #fff;
-    }
-
-    .productpage_menu {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 9999;
-        display: none;
-        text-align: center;
-        background: #000;
-        padding: 7px 0;
-        transition: padding 0.5s;
-        left: 0;
-    }
-
-    .productpage .productpage_menu ul.nav {
-        display: table-row;
-        margin: 0;
-        padding: 0;
-    }
-
-    .productpage .productpage_menu li {
-        color: #e6e6e6;
-        font-size: 16px;
-        font-size: 1.6rem;
-        list-style: none;
-        display: table-cell;
-    }
-
-    .productpage .productpage_menu a {
-        text-decoration: none;
-        padding: 10px 15px;
-    }
-    /* MENU END */
-    /* CUSTOMER SECTION CSS */
-
-    .customers li {
-        display: list-item !important;
-        list-style-type: circle;
-        padding: 5px 0px 5px 0px;
-    }
-
-    .customers .first {
-        float: left;
-        max-width: max-content !important;
-    }
-
-    .customers .firstimage {
-        text-align: center;
-    }
-
-    .customers .second {
-        float: left;
-        max-width: max-content !important;
-        box-shadow: 0px 0px 0px 0px !important;
-    }
-
-    .customers .secondimage {
-        float: right;
-        text-align: center;
-    }
-    /* API SECTION START */
-
-    .api-left {
-        text-align: -webkit-left;
-        text-align: -moz-left;
-        text-align: -o-left;
-        text-align: -ms-left;
-    }
-
-    .api-right {
-        text-align: -webkit-right;
-        text-align: -moz-right;
-        text-align: -o-right;
-        text-align: -ms-right;
-    }
-    /* API SECTION END */
-    /* License SECTION START */
-    /* License SECTION END */
-    /* Anchor settings START */
-
-    #collections {
-        display: block;
-        height: 40px;
-        margin-top: 40px;
-        visibility: hidden;
-    }
-
-    #orders {
-        display: block;
-        height: 40px;
-        margin-top: 40px;
-        visibility: hidden;
-    }
-
-    #customers {
-        display: block;
-        height: 40px;
-        margin-top: 40px;
-        visibility: hidden;
-    }
-
-    #integration {
-        display: block;
-        height: 40px;
-        margin-top: 40px;
-        visibility: hidden;
-    }
-
-    #license {
-        display: block;
-        visibility: hidden;
-    }
-    /* Anchor settings END */
-    /* BASIC W3 editings START */
-
-    h3.w3-center {
-        font-size: 30px;
-    }
-
-    .w3-container.w3-white {
-        text-align: left;
-        padding: 10px 0px 0px 10px;
-        max-width: 450px;
-    }
-
-    .w3-container.w3-white li {
-        padding: 5px 0px 5px 0px;
-        display: block;
-    }
-
-    img.w3-hover-opacity {
-        max-width: 450px;
-        border-radius: 13px;
-    }
-
-    .w3-black,
-    .w3-hover-black {
-        color: #fff!important;
-        background-color: #cc3300 !important;
-    }
-
-    a.w3-button.w3-black:hover {
-        background: #ff4000 !important;
-        color: #fff !important;
-        transition: background-color 0.5s ease;
-    }
-    /* BASIC W3 editings END */
-    /* Section - Parallax START */
-    /**************************/
-
-    #parallax-head .parallax-one {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(https://marketplacecdn.yoyogames.com/images/assets/1874/screenshots/5146_original.png?1430761602);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        cursor: pointer;
-    }
-
-    .parallax-one img.w3-hover-opacity {
-        max-width: 170px !important;
-        width: 200px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .parallax-one .w3-container.w3-white {
-        background: none !important;
-    }
-    /* Section - Parallax END */
-    /* Style CSS for existing content */
-
-    input.btn.btn-submit.button.primary.align-center {
-        margin-top: 10px;
-        margin-left: 0px;
-    }
-
-    .home-hero {
-        display: none;
-    }
-</style>
-
 <main>
-    <section class="home-hero" style="background: url('{{ page.Image}}') center center no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
-        <div class="hero-content block">
-            <div class="grid-wrap">
-                <h1 class="hero-title c-light">{{ page.title}}</h1>
+        <section class="home-hero" style="background: url('{{ page.Image}}') center center no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
+            <div class="hero-content block">
+                <div class="grid-wrap">
+                    <h1 class="hero-title c-light">{{ page.title}}</h1>
+                </div>
+                <!-- /.grid-wrap -->
             </div>
-            <!-- /.grid-wrap -->
-        </div>
-        <!-- /.hero-content -->
-    </section>
-
-
-    <div class="productpage">
-        <div class="productpage_menu" id="product_menu">
-            <ul class="nav">
-                <li>
-                    <a href="#collections" id="collections_button">collections</a>
-                </li>
-                <li>
-                    <a href="#orders" id="orders_button">orders</a>
-                </li>
-                <li>
-                    <a href="#customers" id="customers_button">customers</a>
-                </li>
-                <li>
-                    <a href="#integration" id="integration_button">integration</a>
-                </li>
-                <li>
-                    <a href="#license" id="license_button">license</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Collection Section -->
-        <a id="collections"></a>
-        <div class="wrap-content">
-            <h1 class="w3-center">Present your collection</h1>
-            <p class="w3-center w3-large">Showcase your collections in the best-in-class digital experience for fashion. Reduce the reliance on sample
-                collections and reduce both sample production and printing costs.</p>
-            <div class="w3-row-padding">
-                <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot3.png" alt="catalog"
-                        style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p>
-                            <b>State-of-the-art cata­log</b>
-                        </p>
-                        <p>
-                            <li>Browse styles by categories, materials and looks</li>
-                            <li>Always available: online and offline, browse through customers and catalog offline</li>
-                            <li>You can view high resolution collection images, filter and search items, view stock levels and
-                                customer prices.
-                            </li>
-                            <li>Connect to all your information in your backoffice system even without a connection</li>
-                        </p>
-                    </div>
-                </div>
-                <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot3.png" alt="lookbook"
-                        style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p>
-                            <b>State-of-the-art digital lookbook</b>
-                        </p>
-                        <p>
-                            <li>You always have your complete catalog with you</li>
-                            <li>Promote new styles and show collection lookbooks</li>
-                            <li>Shop the look: Link items to lookbook images to get more orders</li>
-                            <li>Add digital sticky notes anywhere in you lookbook or catalog</li>
-                        </p>
-                    </div>
-                </div>
-                <div class="w3-third w3-container">
-                    <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot3.png" alt="catalog"
-                        style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p>
-                            <b>Personalised catalog</b>
-                        </p>
-                        <p>
-                            <li>Visual line plan</li>
-                            <li>Generate a stylebook specifically for one customer, add all the preferred styles or currently
-                                ordered styles
-                            </li>
-                            <li>Generate a PDF, based on your own customised template</li>
-                            <li>Export data and line sheets in various output formats like CSV, Excel, PDF and other</li>
-                        </p>
-                    </div>
-                </div>
+            <!-- /.hero-content -->
+        </section>
+    
+    
+        <div class="productpage">
+            <div class="productpage_menu" id="product_menu">
+                <ul class="nav">
+                    <li>
+                        <a href="#collections" id="collections_button">collections</a>
+                    </li>
+                    <li>
+                        <a href="#orders" id="orders_button">orders</a>
+                    </li>
+                    <li>
+                        <a href="#customers" id="customers_button">customers</a>
+                    </li>
+                    <li>
+                        <a href="#integration" id="integration_button">integration</a>
+                    </li>
+                    <li>
+                        <a href="#license" id="license_button">license</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <!-- Order Section -->
-        <a id="orders"></a>
-        <div class="wrap-content">
-            <h1 class="w3-center">Manage your orders</h1>
-            <p class="w3-center w3-large">Take your sales to the next level, accelerate your sales with our platform for fashion wholesale.</p>
-        </div>
-        <div id="parallax-head">
-            <section>
-                <div class="parallax-one">
-                    <div class="wrap-content">
-                        <div class="w3-row-padding">
-                            <div class="w3-third w3-container w3-margin-bottom">
-                                <img src="https://affectionate-engelbart-a6512f.netlify.com/assets/img/euro-logo.png" alt="catalog" style="width:100%" class="w3-hover-opacity">
-                                <div class="w3-container w3-white">
-                                    <p>
-                                        <b>Ipad app for sales reps</b>
-                                    </p>
-                                    <p>
-                                        <li>Keep sales reps up to date with updated product info, realtime stock levels and new
-                                            styles
-                                        </li>
-                                        <li>Capture orders offline</li>
-                                        <li>Manage and place orders for multiple customers</li>
-                                        <li>Shorten sales with: order templates; barcode scanning & digital signing</li>
-                                        <li>Place orders directly into your own enterprise back office system</li>
-                                        <li>Future stock (ATP) information</li>
-                                        <li>Export order links: so retailer kan oder later via webshop</li>
-                                    </p>
-                                </div>
+    
+            <div id="parallax-head">
+                    <section>
+                        <div class="parallax-one">
+                            <div class="wrap-content">
+                                    <h1 class="w3-center">The leading app in Fashion</h1>
+                                    <p class="w3-center w3-large">The polished user experience of mobile devices integrates with your back-office. Collections and stock info are always available anywhere, offline. Submit orders, check order history, quickly find items, scan barcodes and view matching products for upsell.</p>
                             </div>
-                            <div class="w3-third w3-container w3-margin-bottom">
-                                <img src="https://affectionate-engelbart-a6512f.netlify.com/files/gallery/realtime-.png" alt="lookbook" style="width:100%"
-                                    class="w3-hover-opacity">
-                                <div class="w3-container w3-white">
-                                    <p>
-                                        <b>Customer order analytics</b>
-                                    </p>
-                                    <p>
-                                        <li>Analyse previous seasons, pre-orders, re-order, cancellations and returns</li>
-                                        <li>Compare various seasons to detect trends and create a balanced sell-in for your customer</li>
-                                        <li>Allows users to analyse historical sales numbers of each customer</li>
-                                        <li>Allow sales to view and update budgets send from your ERP backoffice system</li>
-                                    </p>
-                                </div>
+        
+                        </div>
+                    </section>
+                </div>
+    
+            <!-- Collection Section -->
+            <a id="collections"></a>
+            <div class="wrap-content collections">
+                <div class="w3-row">
+                        <div class="w3-container w3-half">
+                                <h1 class="w3-center">Present your collection</h1>
+                                <p class="w3-center w3-large">Showcase your collections in the best-in-class digital experience for fashion. Reduce the reliance on sample collections
+                                    and reduce both sample production and printing costs.</p>
+                            <div id="tab-1" class="tab-content-collections current">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/reach-out-640x427.png" alt="catalog" style="width:100%">
                             </div>
-                            <div class="w3-third w3-container">
-                                <img src="https://affectionate-engelbart-a6512f.netlify.com/files/gallery/1.png" alt="catalog" style="width:100%" class="w3-hover-opacity">
-                                <div class="w3-container w3-white">
-                                    <p>
-                                        <b>Central management for sales admins</b>
-                                    </p>
-                                    <p>
-                                        <li>Monitor sales and update budget forecasts in real time</li>
-                                        <li>Review, edit and confirm orders</li>
-                                        <li>Send confirmations by email</li>
-                                        <li>budget en forecasting tool</li>
-                                    </p>
-                                </div>
+                            <div id="tab-2" class="tab-content-collections">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/map-640x427.png" alt="catalog" style="width:100%">
+                            </div>
+                            <div id="tab-3" class="tab-content-collections">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/2b-640x427.png" alt="catalog" style="width:100%">
                             </div>
                         </div>
+                    <div class="w3-container w3-half">
+                        <ul class="tabs-collections">
+                            <li class="tab-link current" data-tab-collections="tab-1">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>
+    
+                                <b>State-of-the-art cata­log</b>
+    
+                                <p>Browse styles by categories, materials and looks</p>
+                                <p>Always available: online and offline, browse through customers and catalog offline</p>
+                                <p>You can view high resolution collection images, filter and search items, view stock levels and
+                                    customer prices
+                                </p>
+                                <p>Connect to all your information in your backoffice system even without a connection</p>
+    
+    
+    
+                            </li>
+                            <br>
+                            <li class="tab-link" data-tab-collections="tab-2">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>
+    
+                                <b>State-of-the-art digital lookbook</b>
+    
+                                <p>You always have your complete catalog with you</p>
+                                <p>Promote new styles and show collection lookbooks</p>
+                                <p>Shop the look: Link items to lookbook images to get more orders</p>
+                                <p>Add digital sticky notes anywhere in you lookbook or catalog</p>
+    
+                            </li>
+                            <br>
+                            <li class="tab-link" data-tab-collections="tab-3">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>
+    
+                                <b>Personalised catalog</b>
+    
+                                <p>Visual line plan</p>
+                                <p>Generate a stylebook specifically for one customer, add all the preferred styles or currently
+                                    ordered styles
+                                </p>
+                                <p>Generate a PDF, based on your own customised template</p>
+                                <p>Export data and line sheets in various output formats like CSV, Excel, PDF and other</p>
+    
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
+            </div>
+    
+    
+            <!-- Order Section -->
+            <a id="orders"></a>
+            <div class="wrap-content orders">
+                <div class="w3-row">
+                    <div class="w3-container w3-half">
+                        <ul class="tabs-orders">
+                            <li class="tab-link current" data-tab-orders="tab-10">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>
+                                        <b>Ipad app for sales reps</b>
+                                   
+                                        <p>Keep sales reps up to date with updated product info, realtime stock levels and new
+                                            styles
+                                        </p>
+                                        <p>Capture orders offline</p>
+                                        <p>Manage and place orders for multiple customers</p>
+                                        <p>Shorten sales with: order templates; barcode scanning & digital signing</p>
+                                        <p>Place orders directly into your own enterprise back office system</p>
+                                        <p>Future stock (ATP) information</p>
+                                        <p>Export order links: so retailer kan oder later via webshop</p>
+                            </li>
+                            <br>
+                            <li class="tab-link" data-tab-orders="tab-20">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>     
+                                        <b>Customer order analytics</b>
+                                    
+                                        <p>Analyse previous seasons, pre-orders, re-order, cancellations and returns</p>
+                                        <p>Compare various seasons to detect trends and create a balanced sell-in for your customer</p>
+                                        <p>Allows users to analyse historical sales numbers of each customer</p>
+                                        <p>Allow sales to view and update budgets send from your ERP backoffice system</p>                          
+                            </li>
+                            <br>
+                            <li class="tab-link" data-tab-orders="tab-30">
+                                <i class="material-icons md-dark md-inactive">chevron_right</i>
+                                        <b>Central management for sales admins</b>
+                            
+                                        <p>Monitor sales and update budget forecasts in real time</p>
+                                        <p>Review, edit and confirm orders</p>
+                                        <p>Send confirmations by email</p>
+                                        <p>budget en forecasting tool</p>       
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w3-container w3-half">
+                            <h1 class="w3-center">Manage your orders</h1>
+                            <p class="w3-center w3-large">Take your sales to the next level, accelerate your sales with our platform for fashion wholesale.</p>
+                            <div id="tab-10" class="tab-content-orders current">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/reach-out-640x427.png" alt="catalog" style="width:100%">
+                            </div>
+                            <div id="tab-20" class="tab-content-orders">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/map-640x427.png" alt="catalog" style="width:100%">
+                            </div>
+                            <div id="tab-30" class="tab-content-orders">
+                                <img src="https://fashiontrade.com/wp-content/uploads/2017/11/2b-640x427.png" alt="catalog" style="width:100%">
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+    
+            <!-- Customer Section -->
+            <a id="customers"> </a>
+            <div class="wrap-content">
+                <div class="customers">
+                    <h1 class="w3-center">Activate your Customers</h1>
+                    <p class="w3-center w3-large">Empower and re-engage your customers to increase b2b order volume. Promote your collections with B2B marketing.</p>
+                    <div class="w3-row-padding">
+                        <div class="w3-half w3-container w3-margin-bottom firstimage">
+                            <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshotcustomer.png"
+                                alt="catalog" style="width:100%" class="w3-hover-opacity">
+                        </div>
+                        <div class="w3-half 3-container w3-white first">
+                            <p>
+                                <b>Self service portal for B2B customers</b>
+                            </p>
+                            <p>
+                                Enables B2B customers to:
+                                <li>Browse assortments</li>
+                                <li>See realtime stock availability</li>
+                                <li>Place orders</li>
+                                <li>View order history</li>
+                                <li>Order status and invoices</li>
+                                <li>Download images and other assets</li>
+                                <li>Allow your retail customers to place return orders</li>
+                                <li>Lightens the load for your customer service representatives</li>
+                                <li>Increases the availability of your service to 24x7</li>
+                                <li>Export order links: orders made in Colect iPad app for sales reps can be finalised in the webshop</li>
+                            </p>
+                        </div>
+                        <div class="w3-half w3-container w3-margin-bottom secondimage">
+                            <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/marketingautomation.png"
+                                alt="lookbook" style="width:100%" class="w3-hover-opacity">
+                        </div>
+                        <div class="w3-half w3-container w3-white second">
+                            <p>
+                                <b>Marketing automation</b>
+                            </p>
+                            <p>
+                                <li>Continuous re-engagement of customers to increase b2b order volume</li>
+                                <li>Promote your collections</li>
+                                <li>Setup automated email & ad workflows to re-engage users</li>
+                                <li>Add brand customized templates</li>
+                                <li>Automated triggering for marketing flows</li>
+                                <li>Send automated personalised e-mails from sales reps</li>
+                                <li>Automatically monitor user behavior and act accordingly</li>
+                                <li>Win-Back Low Activity Customers</li>
+                                <li>Abandoned Shopping Cart</li>
+                                <li>Product Back on Stock Notification</li>
+                                <li>Prospect Onboarding</li>
+                                <li>New Collection Available & best sellers</li>
+                                <li>Customer Loyalty Program</li>
+                                <li>Increase number of B2B orders by at least 3-6%</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ERP - API Integration Section -->
+            <a id="integration"></a>
+            <div class="wrap-content">
+                <h1 class="w3-center">API Integration</h1>
+                <p class="w3-center w3-large">There is an easy to use API available if you want to create the connection yourself.</p>
+                <div class="w3-container w3-light-grey" style="padding:128px 16px">
+                    <div class="w3-row-padding">
+                        <div class="w3-col m6">
+                            <h3>Integrate Colect with your information system</h3>
+                            <p>Connecting Colect to your current ERP, CRM, PLM or PIM system is simple. Connecting directly to Colect
+                                is supported by many different systems to facilitate automated data exchange.</p>
+                            <p>
+                                <strong>ERP:</strong> SAP, Microsoft Dynamics AX, Microsoft Dynamics NAV, K3 Pebblestone Fashion, Oracle,
+                                Infor M3, ACA Wholesale, Intex,Diatex, Garp, e-conomic, Reflecta XL-ENZ, SoftWear, Trimit, C5,
+                                Exact, itSuitsFashion, StyleMan, Apparel21, Unit4, AS400.
+                                <br />
+                                <br />
+                                <strong>PLM/PIM:</strong> Bynder, InRiver, Centric8.
+                                <br />
+                                <br />
+                                <strong>CRM:</strong> SalesForce.com, Microsoft Dynamics CRM.
+                            </p>
+                            <p>
+                                <a href="#" class="w3-button w3-black">View Our Works</a>
+                            </p>
+                        </div>
+                        <div class="w3-col m6">
+                            <img class="w3-image w3-round-large" src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot10.png"
+                                alt="erp" width="700" height="394">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="w3-row-padding" style="padding:100px 16px">
+                    <div class="w3-half w3-container w3-margin-bottom api-left">
+                        <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot5.png" alt="catalog"
+                            style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p>
+                                <b>Colect API Integration</b>
+                            </p>
+                            <p>
+                                <li>Easy to use API available if you want to create the connection yourself. For creating new integrations
+                                    we advise you to use our Colect WebServices API. Our API has full support for synchronising
+                                    products, customers, access rules, stock-levels, prices and more. Orders can either be requested
+                                    or pushed back directly to your backoffice system. We have a full set of documentation available;
+                                    please contact us to gain access to our API documentation.</li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-container w3-margin-bottom api-right">
+                        <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot6.png" alt="lookbook"
+                            style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p>
+                                <b>CSV/XML Integration</b>
+                            </p>
+                            <p>
+                                <li>Support for a number of file based integrations with automatic scheduling. Colect also supports
+                                    a number of file based integrations (either XML or CSV) through a secure FTP interface. These
+                                    can be scheduled to check for data-updates at regular time intervals.</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- License Section -->
+            <a id="license"></a>
+            <div class="wrap-content">
+                <h1 class="w3-center">The Colect Licensing Model</h1>
+                <div class="w3-container w3-center license">
+                    <p>
+                        Is based on flexible monthly or yearly subscriptions. Accessible both for brands with a few salespeople as well as for worldwide
+                        brands with hundreds of users without huge up-front investments. Learn more:
+                        <a href="http://colect.io/news/detail/colect-licensing-model">http://colect.io/news/detail/colect-licensing-model</a>
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="wrap-content">
+            <section class="block bg-white">
+                <div class="grid-wrap">
+    
+                    <div class="grid-row ">
+                        <div class="half">
+                            <div class="pers">
+    
+                                <h3>Everything you need to know about B2B selling in the fashion industry</h3>
+    
+    
+                                <p>Give your content the reach it deserves. Get in front of our active science & tech savy audience
+                                    that loves to engage with entertaining content. Drive regular traffic as a content partner
+                                    or promote your awesome Kickstarter or Indigogo project. </p>
+                                <p>Inside you will learn:</p>
+                                <ul>
+                                    <li>Why you need to go inbound</li>
+                                    <li>What inbound is and how it works</li>
+                                    <li>What you need in order to get started</li>
+                                </ul>
+                                <p>To get your copy of this indispensable guide, fill in the form!</p>
+    
+                            </div>
+                        </div>
+    
+                        <div class="half">
+                            <div class="form1" style="    padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 35px;
+            padding-top: 1px;
+            margin-top: 30px;
+            background-color: gainsboro;">
+                                <form action="https://www.getdrip.com/forms/518740736/submissions" method="post" data-drip-embedded-form="518740736">
+                                    <h3 data-drip-attribute="headline">Download the guide</h3>
+                                    <div data-drip-attribute="description">Enter your name, company and best email and we’ll email you a PDF document.</div>
+                                    <div>
+                                        <label for="drip-Name">Name</label>
+                                        <br />
+                                        <input type="text" id="drip-Name" name="fields[Name]" class="form-control" value="" />
+                                    </div>
+                                    <div>
+                                        <label for="drip-email">Email Address</label>
+                                        <br />
+                                        <input type="email" id="drip-email" name="fields[email]" class="form-control" value="" />
+                                    </div>
+                                    <div>
+                                        <label for="drip-Company">Company</label>
+                                        <br />
+                                        <input type="text" id="drip-Company" name="fields[Company]" class="form-control" value="" />
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="submit" value="download now" class="btn btn-submit button primary align-center" data-drip-attribute="sign-up-button"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
             </section>
         </div>
-
-        <!-- Customer Section -->
-        <a id="customers"> </a>
-        <div class="wrap-content">
-            <div class="customers">
-                <h1 class="w3-center">Activate your Customers</h1>
-                <p class="w3-center w3-large">Empower and re-engage your customers to increase b2b order volume. Promote your collections with B2B marketing.</p>
-                <div class="w3-row-padding">
-                    <div class="w3-half w3-container w3-margin-bottom firstimage">
-                        <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshotcustomer.png"
-                            alt="catalog" style="width:100%" class="w3-hover-opacity">
-                    </div>
-                    <div class="w3-half 3-container w3-white first">
-                        <p>
-                            <b>Self service portal for B2B customers</b>
-                        </p>
-                        <p>
-                            Enables B2B customers to:
-                            <li>Browse assortments</li>
-                            <li>See realtime stock availability</li>
-                            <li>Place orders</li>
-                            <li>View order history</li>
-                            <li>Order status and invoices</li>
-                            <li>Download images and other assets</li>
-                            <li>Allow your retail customers to place return orders</li>
-                            <li>Lightens the load for your customer service representatives</li>
-                            <li>Increases the availability of your service to 24x7</li>
-                            <li>Export order links: orders made in Colect iPad app for sales reps can be finalised in the webshop</li>
-                        </p>
-                    </div>
-                    <div class="w3-half w3-container w3-margin-bottom secondimage">
-                        <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/marketingautomation.png"
-                            alt="lookbook" style="width:100%" class="w3-hover-opacity">
-                    </div>
-                    <div class="w3-half w3-container w3-white second">
-                        <p>
-                            <b>Marketing automation</b>
-                        </p>
-                        <p>
-                            <li>Continuous re-engagement of customers to increase b2b order volume</li>
-                            <li>Promote your collections</li>
-                            <li>Setup automated email & ad workflows to re-engage users</li>
-                            <li>Add brand customized templates</li>
-                            <li>Automated triggering for marketing flows</li>
-                            <li>Send automated personalised e-mails from sales reps</li>
-                            <li>Automatically monitor user behavior and act accordingly</li>
-                            <li>Win-Back Low Activity Customers</li>
-                            <li>Abandoned Shopping Cart</li>
-                            <li>Product Back on Stock Notification</li>
-                            <li>Prospect Onboarding</li>
-                            <li>New Collection Available & best sellers</li>
-                            <li>Customer Loyalty Program</li>
-                            <li>Increase number of B2B orders by at least 3-6%</li>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ERP - API Integration Section -->
-        <a id="integration"></a>
-        <div class="wrap-content">
-            <h1 class="w3-center">API Integration</h1>
-            <p class="w3-center w3-large">There is an easy to use API available if you want to create the connection yourself.</p>
-            <div class="w3-container w3-light-grey" style="padding:128px 16px">
-                <div class="w3-row-padding">
-                    <div class="w3-col m6">
-                        <h3>Integrate Colect with your information system</h3>
-                        <p>Connecting Colect to your current ERP, CRM, PLM or PIM system is simple. Connecting directly to Colect
-                            is supported by many different systems to facilitate automated data exchange.</p>
-                        <p>
-                            <strong>ERP:</strong> SAP, Microsoft Dynamics AX, Microsoft Dynamics NAV, K3 Pebblestone Fashion, Oracle,
-                            Infor M3, ACA Wholesale, Intex,Diatex, Garp, e-conomic, Reflecta XL-ENZ, SoftWear, Trimit, C5,
-                            Exact, itSuitsFashion, StyleMan, Apparel21, Unit4, AS400.
-                            <br />
-                            <br />
-                            <strong>PLM/PIM:</strong> Bynder, InRiver, Centric8.
-                            <br />
-                            <br />
-                            <strong>CRM:</strong> SalesForce.com, Microsoft Dynamics CRM.
-                        </p>
-                        <p>
-                            <a href="#" class="w3-button w3-black">View Our Works</a>
-                        </p>
-                    </div>
-                    <div class="w3-col m6">
-                        <img class="w3-image w3-round-large" src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot10.png"
-                            alt="erp" width="700" height="394">
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-row-padding" style="padding:100px 16px">
-                <div class="w3-half w3-container w3-margin-bottom api-left">
-                    <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot5.png" alt="catalog"
-                        style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p>
-                            <b>Colect API Integration</b>
-                        </p>
-                        <p>
-                            <li>Easy to use API available if you want to create the connection yourself. For creating new integrations
-                                we advise you to use our Colect WebServices API. Our API has full support for synchronising
-                                products, customers, access rules, stock-levels, prices and more. Orders can either be requested
-                                or pushed back directly to your backoffice system. We have a full set of documentation available;
-                                please contact us to gain access to our API documentation.</li>
-                        </p>
-                    </div>
-                </div>
-                <div class="w3-half w3-container w3-margin-bottom api-right">
-                    <img src="https://assets.apptitude.nl/Apps4Fashion/webstore_v2/APPTITUDE_DEMO/images/colectwebsite/screenshot6.png" alt="lookbook"
-                        style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p>
-                            <b>CSV/XML Integration</b>
-                        </p>
-                        <p>
-                            <li>Support for a number of file based integrations with automatic scheduling. Colect also supports
-                                a number of file based integrations (either XML or CSV) through a secure FTP interface. These
-                                can be scheduled to check for data-updates at regular time intervals.</li>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- License Section -->
-        <a id="license"></a>
-        <div class="wrap-content">
-            <h1 class="w3-center">The Colect Licensing Model</h1>
-            <div class="w3-container w3-center license">
-                <p>
-                    Is based on flexible monthly or yearly subscriptions. Accessible both for brands with a few salespeople as well as for worldwide
-                    brands with hundreds of users without huge up-front investments. Learn more:
-                    <a href="http://colect.io/news/detail/colect-licensing-model">http://colect.io/news/detail/colect-licensing-model</a>
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="wrap-content">
-        <section class="block bg-white">
-            <div class="grid-wrap">
-
-                <div class="grid-row ">
-                    <div class="half">
-                        <div class="pers">
-
-                            <h3>Everything you need to know about B2B selling in the fashion industry</h3>
-
-
-                            <p>Give your content the reach it deserves. Get in front of our active science & tech savy audience
-                                that loves to engage with entertaining content. Drive regular traffic as a content partner
-                                or promote your awesome Kickstarter or Indigogo project. </p>
-                            <p>Inside you will learn:</p>
-                            <ul>
-                                <li>Why you need to go inbound</li>
-                                <li>What inbound is and how it works</li>
-                                <li>What you need in order to get started</li>
-                            </ul>
-                            <p>To get your copy of this indispensable guide, fill in the form!</p>
-
-                        </div>
-                    </div>
-
-                    <div class="half">
-                        <div class="form1" style="    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 35px;
-    padding-top: 1px;
-    margin-top: 30px;
-    background-color: gainsboro;">
-                            <form action="https://www.getdrip.com/forms/518740736/submissions" method="post" data-drip-embedded-form="518740736">
-                                <h3 data-drip-attribute="headline">Download the guide</h3>
-                                <div data-drip-attribute="description">Enter your name, company and best email and we’ll email you a PDF document.</div>
-                                <div>
-                                    <label for="drip-Name">Name</label>
-                                    <br />
-                                    <input type="text" id="drip-Name" name="fields[Name]" class="form-control" value="" />
-                                </div>
-                                <div>
-                                    <label for="drip-email">Email Address</label>
-                                    <br />
-                                    <input type="email" id="drip-email" name="fields[email]" class="form-control" value="" />
-                                </div>
-                                <div>
-                                    <label for="drip-Company">Company</label>
-                                    <br />
-                                    <input type="text" id="drip-Company" name="fields[Company]" class="form-control" value="" />
-                                </div>
-                                <div>
-                                    <input type="submit" name="submit" value="download now" class="btn btn-submit button primary align-center" data-drip-attribute="sign-up-button"
-                                    />
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-        </section>
-    </div>
-
-</main>
+    
+    </main>
 {% include footer.html %}

@@ -1,0 +1,236 @@
+/* MEDIA QUERIES START */
+
+@media screen and (max-width: 700px) {
+
+    .productpage .productpage_menu li {
+        width: 33%;
+        padding: 4px 0px 4px 0px;
+        float: left;
+    }
+}
+/* MEDIA QUERIES END */
+/* BASIC PAGE START */
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+.wrap-content {
+    max-width: 1054px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.wrap-content p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+a#collection_button:active {
+    color: red;
+}
+/* BASIC PAGE END */
+/* MENU START */
+
+.productpage .productpage_menu a:hover {
+    color: #fff;
+}
+
+.productpage_menu {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    text-align: center;
+    background: #000;
+    padding: 17px 0;
+    transition: padding 0.5s;
+    left: 0;
+}
+
+.productpage .productpage_menu ul.nav {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+}
+
+.productpage .productpage_menu li {
+    color: #e6e6e6;
+    font-size: 16px;
+    font-size: 1.6rem;
+    list-style: none;
+    display: table-cell;
+}
+
+.productpage .productpage_menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+/* MENU END */
+/* CUSTOMER SECTION CSS */
+
+.customers li {
+    display: list-item !important;
+    list-style-type: circle;
+    padding: 5px 0px 5px 0px;
+}
+
+.customers .first {
+    float: left;
+    max-width: max-content !important;
+}
+
+.customers .firstimage {
+    text-align: center;
+}
+
+.customers .second {
+    float: left;
+    max-width: max-content !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+.customers .secondimage {
+    float: right;
+    text-align: center;
+}
+/* API SECTION START */
+
+.api-left {
+    text-align: -webkit-left;
+    text-align: -moz-left;
+    text-align: -o-left;
+    text-align: -ms-left;
+}
+
+.api-right {
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    text-align: -o-right;
+    text-align: -ms-right;
+}
+/* API SECTION END */
+/* License SECTION START */
+/* License SECTION END */
+/* Anchor settings START */
+
+#collections {
+    display: block;
+    height: 40px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#orders {
+    display: block;
+    height: 40px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#customers {
+    display: block;
+    height: 40px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#integration {
+    display: block;
+    height: 40px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#license {
+    display: block;
+    visibility: hidden;
+}
+/* Anchor settings END */
+/* BASIC W3 editings START */
+
+h3.w3-center {
+    font-size: 30px;
+}
+
+.w3-container.w3-white {
+    text-align: left;
+    padding: 10px 0px 0px 10px;
+    max-width: 450px;
+}
+
+.w3-container.w3-white li {
+    padding: 5px 0px 5px 0px;
+    display: block;
+}
+
+img.w3-hover-opacity {
+    max-width: 450px;
+    border-radius: 13px;
+}
+
+.w3-black,
+.w3-hover-black {
+    color: #fff!important;
+    background-color: #cc3300 !important;
+}
+
+a.w3-button.w3-black:hover {
+    background: #ff4000 !important;
+    color: #fff !important;
+    transition: background-color 0.5s ease;
+}
+/* BASIC W3 editings END */
+/* Section - Parallax START */
+/**************************/
+
+#parallax-head .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://marketplacecdn.yoyogames.com/images/assets/1874/screenshots/5146_original.png?1430761602);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.parallax-one img.w3-hover-opacity {
+    max-width: 170px !important;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.parallax-one .w3-container.w3-white {
+    background: none !important;
+}
+/* Section - Parallax END */
+/* Style CSS for existing content */
+
+input.btn.btn-submit.button.primary.align-center {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.home-hero {
+    display: none;
+}
