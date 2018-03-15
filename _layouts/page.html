@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+{% include header.html %}
+
+    <section class="home-hero" style="background: url('{{ page.Image}}') center center no-repeat ; -webkit-background-size: cover; background-size: cover;">
+                <div class="hero-content block">
+                    <div class="grid-wrap">
+                        <div class="half" style="text-align: left;">
+                        <h1 class="hero-title c-light">{{ page.title }}</h1>
+                        <p class="hero-text c-light">{{ page.Intro}}</p>
+                    </div>
+                    </div><!-- /.grid-wrap -->
+                </div><!-- /.hero-content -->
+    </section>
+
+    
+    <!-- Content unit -->
+    <section class="block bg-white" id="content">
+      <div class="grid-wrap align-left">
+        
+
+        <div class="content">
+            {{ content }}
+        </div>
+      </div><!-- /.grid-wrap -->
+    </section>
+
+    {% include footer.html %}

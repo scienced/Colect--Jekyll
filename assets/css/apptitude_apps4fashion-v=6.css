@@ -1708,8 +1708,8 @@ header {
   text-decoration: underline;
 }
 .content, .content p {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 36px;
   line-height: 3.6rem;
 }
