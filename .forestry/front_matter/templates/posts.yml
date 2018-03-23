@@ -24,3 +24,9 @@ fields:
   type: text
   hidden: true
   default: post
+- type: tag_list
+  name: themes
+  label: themes
+- type: image_gallery
+  name: images
+  label: Images
