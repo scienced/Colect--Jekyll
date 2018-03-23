@@ -5,6 +5,14 @@ date: 2018-02-09 00:00:00 +0000
 Intro: We welcome this German "Familien Unternehmen" to the Colect family and look
   forward to service them with our sales tools on their way to an 100 Million turnover!
 Image: "/uploads/2018/02/08/IMG_0037.PNG"
+themes:
+- brand
+- customer
+- sales app
+images:
+- "/uploads/2018/02/08/1535741_757545220940584_39035005_n.jpg"
+- "/uploads/2018/02/08/2015_resort_69_geo-148.geo-227.jpg"
+- "/uploads/2018/02/08/IMG_0037.PNG"
 ---
 After successfully implementing our mobile order tools at fashion, sports wear, accessory and footwear brands, manufacturers, suppliers, distributors and agencies across Europe we warmly welcome this German "Familien Unternehmen" and look forward to service them with our sales tools on their way to an 100 Million turnover!
 
