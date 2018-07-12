@@ -1,7 +1,7 @@
 ---
-pages:
-- _posts/2018-02-09-apps4fashion-says-herzlich-wilkommen-to-fynch-hatton.md
+label: Posts
 hide_body: false
+is_partial: false
 fields:
 - type: text
   default: ''
@@ -30,3 +30,5 @@ fields:
 - type: image_gallery
   name: images
   label: Images
+pages:
+- _posts/2018-02-09-apps4fashion-says-herzlich-wilkommen-to-fynch-hatton.md
