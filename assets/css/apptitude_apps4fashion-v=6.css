@@ -1217,7 +1217,7 @@ header {
 
 .home-hero {
   height: 450px;
-  background: url("../img/bg/hero.jpg") no-repeat center top;
+  
   background-size: cover;
   text-align: center;
   display: table;
